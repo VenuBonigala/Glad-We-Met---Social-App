@@ -139,7 +139,7 @@ router.post('/forgot-password', async (req, res) => {
     });
 
     // 4. Create email
-    const resetUrl = `http://localhost:3000/reset-password/${token}`;
+    const resetUrl = `https://glad-we-met-frontend.onrender.com/reset-password/${token}`;
     const mailOptions = {
       from: `"Glad We Met" <${process.env.EMAIL_USER}>`,
       to: user.email,
