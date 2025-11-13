@@ -23,7 +23,7 @@ const httpServer = createServer(app);
 
 const io = new SocketIO(httpServer, {
   cors: {
-    origin: 'http://localhost:3000',
+    origin: 'https://glad-we-met-frontend.onrender.com',
     methods: ['GET', 'POST'],
   },
 });
