@@ -1,0 +1,12 @@
+/* 1. We replace the original index.css content with this */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2. Add some global styles */
+body {
+  /* --- EDIT THIS RULE --- */
+  @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-200;
+  /* --- END EDIT --- */
+  font-family: 'Inter', sans-serif;
+}
