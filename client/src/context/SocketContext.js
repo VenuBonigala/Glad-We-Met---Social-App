@@ -26,7 +26,7 @@ export const SocketProvider = ({ children }) => {
 
   useEffect(() => {
     if (user) {
-      const newSocket = io('https://glad-we-met-backend.onrender.com');
+      const newSocket = io('https://glad-we-met-backend-9vms.onrender.com');
       setSocket(newSocket);
 
       newSocket.emit('addUser', user.id);
