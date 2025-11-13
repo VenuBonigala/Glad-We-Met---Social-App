@@ -4,7 +4,7 @@ import axios from 'axios';
 const api = axios.create({
   // We set the base URL to our backend server
   // This avoids us having to type http://localhost:5000 every time
-  baseURL: 'https://glad-we-met-backend.onrender.com', 
+  baseURL: 'https://glad-we-met-backend-9vms.onrender.com', 
 });
 
 /*
