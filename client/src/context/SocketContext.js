@@ -26,7 +26,7 @@ export const SocketProvider = ({ children }) => {
 
   useEffect(() => {
     if (user) {
-      const newSocket = io('http://localhost:5000');
+      const newSocket = io('https://glad-we-met-backend.onrender.com');
       setSocket(newSocket);
 
       newSocket.emit('addUser', user.id);
